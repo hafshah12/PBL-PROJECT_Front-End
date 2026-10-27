@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WashUp – Manajemen Laundry</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style (1).css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-logo" id="brandLogo"></span>
+    </div>
+    <nav id="nav" aria-label="Menu utama"></nav>
+    <div class="side-tip">
+      <span id="tipIcon"></span>
+      <strong>Laundry jadi mudah.</strong>
+      <p>Bersih, teratur, dan selalu tepat waktu.</p>
+    </div>
+    <div class="side-user">
+      <span class="avatar">AB</span>
+      <div><strong>Asha</strong><small>Administrator</small></div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+      <div><strong id="pageTitle">Dasbor</strong><small id="pageDate"></small></div>
+      <div class="top-user"><span class="avatar">AP</span><div><strong>asha</strong><small>Administrator</small></div></div>
+    </header>
+    <main class="content" id="view"></main>
+  </div>
+</div>
+
+<div class="modal-bg" id="modalBg" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head"><h3 id="modalTitle"></h3><button class="icon-btn" id="modalClose" aria-label="Tutup">✕</button></div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app (1).js"></script>
+</body>
+</html>
